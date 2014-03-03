@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">SoundsMUCcy</string>
+    <string name="title_soundlevel_detail">SoundLevel Detail</string>
+    <string name="title_soundlevel_list">SoundLevels</string>
+
+</resources>

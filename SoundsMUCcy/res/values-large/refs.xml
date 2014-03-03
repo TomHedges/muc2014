@@ -1,0 +1,3 @@
+<resources>
+    <item type="layout" name="activity_soundlevel_list">@layout/activity_soundlevel_twopane</item>
+</resources>
