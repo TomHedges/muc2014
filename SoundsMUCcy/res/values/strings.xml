@@ -1,7 +1,24 @@
 <resources>
 
-    <string name="app_name">SoundsMUCcy</string>
-    <string name="title_soundlevel_detail">SoundLevel Detail</string>
-    <string name="title_soundlevel_list">SoundLevels</string>
-
+    <string name="app_name">Sounds MUCcy</string>
+    <string name="title_soundlevel_detail">Sound Level Detail</string>
+    <string name="title_soundlevel_list">Sound Levels</string>
+    <string name="sll_title">Sound Level Logging</string>
+    <string name="sll_results_title">Results:</string>
+    <string name="sll_button_logonce">Log once</string>
+    <string name="sll_button_start_cont">Start</string>
+    <string name="sll_button_stop_cont">Stop</string>
+    <string name="api_key">EHEmJJIYdeTqcKLoZFCzlLEHydcbnswebkmbX4ggb6vesJL9</string>
+    <string name="feed_id">410746564</string>
+    <string name="datastream_SPL">SoundPressureLevel</string>
+    <string name="datastream_DevID">DeviceID</string>
+    <string name="datastream_Lat">Latitude</string>
+    <string name="datastream_Long">Longitude</string>
+    <string name="sll_freq_title">Log Frequency (mins)</string>
+    <string name="sll_loc_title">Location sample (secs)</string>
+    <string name="sll_spl_title">Sound sample (secs)</string>
+    <string name="sll_freq_value">15</string>
+    <string name="sll_loc_value">60</string>
+    <string name="sll_spl_value">5</string>
+   
 </resources>
