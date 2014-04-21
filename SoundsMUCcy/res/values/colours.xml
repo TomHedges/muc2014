@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#56d</color>
+    <color name="title">#FFF</color>
+    <color name="textview">#555</color>
+    <color name="labels">#DDD</color>
+    <color name="results">#FCC</color>
+    
+</resources>

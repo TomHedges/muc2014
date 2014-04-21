@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sound_level_logging"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".SoundLevelLogging" >
+
+    <TextView
+        android:id="@+id/soundlevel_title"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sll_title"
+        android:textColor="@color/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sll_spl_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2"
+                android:text="@string/sll_spl_title"
+                android:textColor="@color/labels"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sll_spl_value"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="@string/sll_spl_value"
+                android:textColor="@color/textview" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/sll_loc_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:text="@string/sll_loc_title"
+                android:textColor="@color/labels"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sll_loc_value"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="@string/sll_loc_value"
+                android:textColor="@color/textview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sll_freq_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sll_freq_title"
+                android:textColor="@color/labels"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sll_freq_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="@string/sll_freq_value"
+                android:textColor="@color/textview" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/soundlevel_button_start_cont"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="3"
+                    android:onClick="onClick"
+                    android:text="@string/sll_button_start_cont" />
+
+                <Button
+                    android:id="@+id/soundlevel_button_stop_cont"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="3"
+                    android:enabled="false"
+                    android:onClick="onClick"
+                    android:text="@string/sll_button_stop_cont" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/soundlevel_button_logonce"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:onClick="onClick"
+                android:text="@string/sll_button_logonce" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sll_results_title"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sll_results_title"
+        android:textColor="@color/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sll_results_value"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:textColor="@color/results" />
+    </LinearLayout>
+
+</LinearLayout>
